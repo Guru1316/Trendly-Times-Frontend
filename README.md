@@ -1,69 +1,44 @@
-# React + TypeScript + Vite
+# 📰 Trendly Times
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Trendly Times** is a modern, responsive news aggregator web app built with **React**, **TypeScript**, **Vite**, and **React-Bootstrap** on the frontend, paired with a Node.js backend proxy server. It fetches the latest news articles from the [NewsAPI.org](https://newsapi.org/) through a backend proxy to keep the API key secure.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+Frontend deployed on GitHub Pages:  
+[https://guru1316.github.io/Trendly-Times-Frontend/](https://guru1316.github.io/Trendly-Times-Frontend/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Backend proxy deployed on Render:  
+[https://trendly-times-backend.onrender.com](https://trendly-times-backend.onrender.com)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧩 Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Fetches real-time news articles from NewsAPI via a secure backend proxy.
+- Multiple news categories: General, Business, Entertainment, Health, Science, Sports, Technology.
+- Search functionality to query news by keywords.
+- Infinite scroll to load more news articles as you scroll down.
+- Sorting news by date (publishedAt).
+- Language selection support (default: English).
+- Responsive design with Bootstrap for seamless experience across devices.
+- Dark mode toggle for comfortable night-time reading.
+- Scroll to top button for easy navigation.
+- Graceful handling of images with default fallback.
+- Pagination support handled internally via backend proxy.
+- Backend proxy protects the NewsAPI key from exposure in frontend code.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tech Stack
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Frontend               | Backend           |
+| ---------------------- | ----------------- |
+| React + TypeScript     | Node.js + Express |
+| Vite (Build Tool)      | Node Fetch        |
+| React-Bootstrap        | CORS Middleware   |
+| Axios (API requests)   |                   |
+| GitHub Pages (Hosting) | Render (Hosting)  |
+
+---
