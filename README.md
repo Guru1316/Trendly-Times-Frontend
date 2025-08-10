@@ -6,11 +6,8 @@
 
 ## 🚀 Live Demo
 
-Frontend deployed on GitHub Pages:  
+Deployed on GitHub Pages:  
 [https://guru1316.github.io/Trendly-Times-Frontend/](https://guru1316.github.io/Trendly-Times-Frontend/)
-
-Backend proxy deployed on Render:  
-[https://trendly-times-backend.onrender.com](https://trendly-times-backend.onrender.com)
 
 ---
 
@@ -20,8 +17,6 @@ Backend proxy deployed on Render:
 - Multiple news categories: General, Business, Entertainment, Health, Science, Sports, Technology.
 - Search functionality to query news by keywords.
 - Infinite scroll to load more news articles as you scroll down.
-- Sorting news by date (publishedAt).
-- Language selection support (default: English).
 - Responsive design with Bootstrap for seamless experience across devices.
 - Dark mode toggle for comfortable night-time reading.
 - Scroll to top button for easy navigation.
